@@ -10,7 +10,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   password: '123',
   database: 'story',
   entities,
-  migrations: ['./dist/migrations/*{.js, .ts}'],
-  synchronize: true,
+  migrations: [__dirname + '/../../migrations/*{.js, .ts}'],
+  synchronize: false,
   autoLoadEntities: true,
 };
